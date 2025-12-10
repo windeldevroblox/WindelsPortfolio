@@ -13,6 +13,25 @@ body {
 }
 .Home h1 {font-family:'Franklin Gothic Medium', 'Arial bold', Arial, sans-serif}
 
+.Home button {
+    background: none;
+
+    min-width: 20%;
+    min-height: 40px;
+    width: auto;
+    height: auto;
+
+    text-align: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    
+
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+}
+
 #ProfileIMG {
     border-radius: 180px;
     border-style: solid;
