@@ -1,0 +1,113 @@
+/* StyleSheet Specific to the home page */
+.Home {
+     color: white;
+     padding-top: 4%;
+     text-align: center;
+}
+.Home h1,h2 {font-family:'Franklin Gothic Medium', 'Arial bold', Arial, sans-serif}
+
+.Home button {
+    background: none;
+
+    min-width: 80%;
+    min-height: 40px;
+    width: auto;
+    height: auto;
+
+    text-align: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    
+
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 80px;
+}
+
+.Home button:hover {
+    color: lab(76.08% 21.33 79.71);
+    border-color: lab(76.08% 21.33 79.71);
+}
+
+.Home #Summary {
+    display: inline-block;
+    background-color: rgba(36, 75, 38, 0.856);
+    border-radius: 5px;
+
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.288);
+
+    min-width: 50%;
+    height: auto;
+
+    justify-content: center;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.Home hr {
+    width: 85%;
+}
+
+.Home b {
+    color: lightblue;
+}
+
+.GameDisplayBox {
+    display: inline-block;
+    min-width: 70%;
+    min-height: 280px;
+    height: auto;
+    width: auto;
+    background-color: rgb(47, 48, 47);
+
+    border-radius: 16px;
+    text-align: left;
+
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+.GameDisplayBox ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.GameDisplayBox li {
+    float: left;
+    padding: 10px;
+}
+
+.GameDisplayBox img {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 80%;
+    height: 200px;
+    border-radius: 15px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+.GameDisplayBox a:hover {
+    font-size: 25px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    font-size: 20px;
+    transition: 0.5s;
+}
