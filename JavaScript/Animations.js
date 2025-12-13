@@ -1,11 +1,4 @@
 
-function SkillClicked(number){
-    PrintElement(number);
+function SkillClicked(){
+    console.log("SkillClicked!")
 };
-
-function PrintElement(number){
-    const DivElement = document.getElementById("Skill" + number);
-    console.log(DivElement);
-
-    return DivElement
-}
