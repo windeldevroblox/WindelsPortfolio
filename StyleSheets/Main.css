@@ -86,8 +86,8 @@ body {
 footer {
     background-color: rgba(49, 48, 48, 0.82);
     margin-top: 30px;
-    margin-left: 15px;
-    width: 95%;
+    margin-left: 3%;
+    width: 90%;
     padding: 70px 30px 20px;
 
     border: 0px;
@@ -176,19 +176,15 @@ footer #footerBottom {
 
 /* Media Query */
 @media (max-width: 700px){
-    .MainNavigation ul {
+   .MainNavigation ul {
         width: 100%;
         text-align: center;
         margin: 10px;
-        margin-left: 70px;
-    }
-
-    footer {
-        width: 85%;
     }
 
     footer #footerNav ul {
-        flex-direction: column;
+        display: block;
+        margin-right: 13%;
     }
 
     footer #footerNav ul li {
@@ -198,6 +194,15 @@ footer #footerBottom {
     }
 
     footer #Socials {
+        display: inline-block;
+    }
+
+    footer #Socials a {
+        width: 35%;
         display: block;
+    }
+
+    footer #Socials i {
+       font-size: 1em;
     }
 }
