@@ -69,10 +69,12 @@
 .GameDisplayBox {
     text-align: center;
     display: inline-block;
-    min-width: 70%;
+    min-width: 30%;
     min-height: 280px;
     height: auto;
     width: auto;
+
+    max-width: 80%;
     background-color: rgb(47, 48, 47);
 
     border-radius: 16px;
