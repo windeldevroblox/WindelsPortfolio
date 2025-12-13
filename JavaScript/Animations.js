@@ -1,4 +1,1 @@
-
-function SkillClicked(){
-    console.log("SkillClicked!")
-};
+console.log("Loaded")
