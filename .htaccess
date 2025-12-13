@@ -1,1 +1,1 @@
-ErrorDocument 404 /InvalidPage.html
+ErrorDocument 404 /Pages/Erros/404.html
