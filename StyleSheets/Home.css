@@ -158,10 +158,23 @@
 }
 
 .thingsICanCode {
-    text-align: center;
     text-decoration: none;
-    
-    width: auto;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+
+    background-color: rgb(47, 48, 47);
+
+    min-width: 50%;
+    width: 50%;
+
+    min-height: 50px;
+    height: auto;
+
+    border-radius: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
 }
 
 .thingsICanCode ul {
@@ -171,6 +184,31 @@
 .thingsICanCode li {
     font-size: 20px;
     font-weight: 500;
+}
+
+.CodeExamples {
+    text-align: center;
+    justify-content: center;
+
+    width: auto;
+    height: auto;
+}
+
+.CodeExamples ul {
+    list-style: none;
+}
+
+.CodeExampleImage img {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 50%;
+    height: 10%;
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    transition: 0.5s;
 }
 
 a {
@@ -192,6 +230,10 @@ a:hover {
 @media (max-width: 800px){
 
     .GameDisplayBox ul {
+        display: block;
+    }
+
+    .thingsICanCode ul {
         display: block;
     }
 
