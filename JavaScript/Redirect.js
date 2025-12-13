@@ -1,0 +1,1 @@
+window.location.replace('/Pages/Portfolio/Home.html')
