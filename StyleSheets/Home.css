@@ -211,6 +211,41 @@
     transition: 0.5s;
 }
 
+.PastWorkDisplay {
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(47, 48, 47);
+    border: 2px, solid, black;
+    border-radius: 15px;
+
+    display: inline-block;
+
+    min-width: 30%;
+    max-width: 80%;
+    height: auto;
+    width: auto;
+
+}
+
+.PastWorkDisplay ul {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.PastWorkDisplay ul li div {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.PastWorkDisplay ul li div iframe {
+    max-width: 95%;
+    min-width: 40%;
+
+    border: 2px, solid, black;
+    border-radius: 10px;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -250,5 +285,18 @@ a:hover {
     .Skills img {
         width: 70%;
         height: 40px;
+    }
+
+    .PastWorkDisplay ul li div iframe {
+        max-width: 85%;
+        min-width: 20%;
+
+        max-height: 40%;
+
+        width: auto;
+        height: auto;
+
+        border: 2px, solid, black;
+        border-radius: 10px;
     }
 }
