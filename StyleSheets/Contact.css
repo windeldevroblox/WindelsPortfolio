@@ -1,6 +1,8 @@
 .Contact {
+    color: white;
+    padding-top: 4%;
     text-align: center;
-    transform: 0.5s;
+    transition: 0.5s;
 }
 
 .Contact h1,h2 {
@@ -10,5 +12,40 @@
 }
 
 .ContactMethods {
-    
+    background-color: rgb(47, 48, 47);
+    border-radius: 10px;
+
+    height: auto;
+    min-height: 20vh;
+    max-height: 40vh;
+
+
+    width: auto;
+    min-width: 50%;
+    max-width: 80%;
+}
+
+.ContactMethods ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+
+.ContactMethods ul li {
+    float: left;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.contactMethod {
+    margin: 10px, 10px, 10px, 10px;
+
+    border: 1px, solid, black;
+    border-radius: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
 }
