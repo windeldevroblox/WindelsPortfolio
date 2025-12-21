@@ -1,0 +1,14 @@
+.Contact {
+    text-align: center;
+    transform: 0.5s;
+}
+
+.Contact div {
+    width: 80%;
+}
+
+.Contact h1,h2 {
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial bold', Arial, sans-serif;
+    transition: 0.5s;
+}
