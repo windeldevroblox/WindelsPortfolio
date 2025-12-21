@@ -20,7 +20,7 @@
 
     text-align: center;
     color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: large;
     
 
@@ -69,10 +69,12 @@
 .GameDisplayBox {
     text-align: center;
     display: inline-block;
-    min-width: 70%;
+    min-width: 30%;
     min-height: 280px;
     height: auto;
     width: auto;
+
+    max-width: 80%;
     background-color: rgb(47, 48, 47);
 
     border-radius: 16px;
@@ -155,9 +157,118 @@
     transition: 0.5s;
 }
 
+.thingsICanCode {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+
+    background-color: rgb(47, 48, 47);
+
+    min-width: 50%;
+    width: 50%;
+
+    min-height: 50px;
+    height: auto;
+
+    border-radius: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.thingsICanCode ul {
+    list-style: none;
+}
+
+.thingsICanCode li {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.CodeExamples {
+    text-align: center;
+    justify-content: center;
+
+    width: auto;
+    height: auto;
+}
+
+.CodeExamples ul {
+    list-style: none;
+}
+
+.CodeExampleImage img {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 40%;
+    height: 10%;
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    transition: 0.5s;
+}
+
+.PastWorkDisplay {
+    background-color: rgb(47, 48, 47);
+    border: 2px solid black;
+    border-radius: 15px;
+
+    display: inline-flex;
+    justify-content: center;   /* center UL horizontally */
+    align-items: center;       /* center UL vertically */
+
+    min-width: 30%;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+}
+
+.PastWorkDisplay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;           /* allow items to move to next row */
+    justify-content: center;   /* center items in each row */
+    align-items: center;
+
+    gap: 10px;                 /* spacing without resizing */
+}
+
+.PastWorkDisplay ul li {
+    padding: 10px;
+    transition: 0.5s;
+
+    flex: 0 0 auto;            /* retain original size */
+}
+
+
+
+.PastWorkDisplay ul li div {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.PastWorkDisplay ul li div iframe {
+    max-width: 95%;
+    min-width: 40%;
+
+    border: 2px, solid, black;
+    border-radius: 10px;
+}
+
 a {
     color: white;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    /* font-size: 20px; */
     transition: 0.5s;
 }
 
@@ -166,14 +277,13 @@ a {
     transition: 0.5s; 
 }
 
-a:hover {
-    /* font-size: 20px; */
-    transition: 0.5s;
-}
-
 @media (max-width: 800px){
 
     .GameDisplayBox ul {
+        display: block;
+    }
+
+    .thingsICanCode ul {
         display: block;
     }
 
@@ -190,5 +300,18 @@ a:hover {
     .Skills img {
         width: 70%;
         height: 40px;
+    }
+
+    .PastWorkDisplay ul li div iframe {
+        max-width: 85%;
+        min-width: 20%;
+
+        max-height: 40%;
+
+        width: auto;
+        height: auto;
+
+        border: 2px, solid, black;
+        border-radius: 10px;
     }
 }
