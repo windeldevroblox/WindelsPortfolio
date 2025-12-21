@@ -20,7 +20,7 @@
 
     text-align: center;
     color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: large;
     
 
@@ -212,26 +212,41 @@
 }
 
 .PastWorkDisplay {
-    text-align: center;
-    justify-content: center;
     background-color: rgb(47, 48, 47);
-    border: 2px, solid, black;
+    border: 2px solid black;
     border-radius: 15px;
 
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;   /* center UL horizontally */
+    align-items: center;       /* center UL vertically */
 
     min-width: 30%;
     max-width: 80%;
-    height: auto;
     width: auto;
-
+    height: auto;
 }
 
 .PastWorkDisplay ul {
     list-style: none;
-    display: inline-block;
-    margin-right: 30px;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;           /* allow items to move to next row */
+    justify-content: center;   /* center items in each row */
+    align-items: center;
+
+    gap: 10px;                 /* spacing without resizing */
 }
+
+.PastWorkDisplay ul li {
+    padding: 10px;
+    transition: 0.5s;
+
+    flex: 0 0 auto;            /* retain original size */
+}
+
+
 
 .PastWorkDisplay ul li div {
     width: 100%;
