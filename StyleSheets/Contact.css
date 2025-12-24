@@ -17,7 +17,7 @@ body {
     margin: 10px;
 }
 
-.ContactMethods {
+.ContactMethods, .paymentMethods {
     background-color: rgb(47, 48, 47);
     border: 1px, solid, black;
     border-radius: 10px;
@@ -31,19 +31,19 @@ body {
     max-width: 100%;
 }
 
-.ContactMethods ul {
+.ContactMethods ul, .paymentMethods ul {
     list-style-type: none;
     margin: 0;
     padding: 10px;
 }
 
-.ContactMethods ul li {
+.ContactMethods ul li, .paymentMethods ul li{
     float: left;
     padding: 10px;
     transition: 0.5s;
 }
 
-.contactMethod {
+.contactMethod, .paymentMethod {
     position: relative;
     margin: 10px;
     padding: 20px;
@@ -57,7 +57,7 @@ body {
     text-align: center;
 }
 
-.contactMethod > a {
+.contactMethod > a, .paymentMethod > a {
     position: absolute;
     left: 20px;
     top: 30%;
@@ -69,16 +69,16 @@ body {
     transition: 0.3s;
 }
 
-.contactMethod > a:hover {
+.contactMethod > a:hover, .paymentMethod > a:hover {
     color: rgb(0, 81, 255);
 }
 
-.contactMethod p a {
+.contactMethod p a, .paymentMethod p a {
     text-decoration: none;
     color: lightblue;
 }
 
-.contactMethod br {
+.contactMethod br, .paymentMethod br {
     display: none;
 }
 
