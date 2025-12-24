@@ -10,7 +10,7 @@ body {
     justify-content: center;
 }
 
-.Contact h1,h2,p {
+.Contact h1,h2,h3,p {
     color: rgb(255, 255, 255);
     font-family:'Franklin Gothic Medium', 'Arial bold', Arial, sans-serif;
     transition: 0.5s;
@@ -21,24 +21,25 @@ body {
     background-color: rgb(47, 48, 47);
     border: 1px, solid, black;
     border-radius: 10px;
+    display: inline-block;
 
     height: auto;
     min-height: 20vh;
-    max-height: 40vh;
 
     width: auto;
     min-width: 50%;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .ContactMethods ul, .paymentMethods ul {
     list-style-type: none;
+    display: inline-block;
     margin: 0;
     padding: 10px;
 }
 
 .ContactMethods ul li, .paymentMethods ul li{
-    float: left;
+    display: inline-block;
     padding: 10px;
     transition: 0.5s;
 }
@@ -100,6 +101,14 @@ body {
         margin-bottom: 10px;
 
         font-size: 32px;
+    }
+
+    /* .contactMethod a, .paymentMethod a {
+        opacity: 0;
+    } */
+
+    .RobuxIcon {
+        opacity: 0;
     }
 }
 
