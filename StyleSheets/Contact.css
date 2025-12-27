@@ -1,14 +1,110 @@
-.Contact {
+body {
     text-align: center;
-    transform: 0.5s;
 }
 
-.Contact div {
-    width: 80%;
+.Contact {
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s;
+    display: inline-block;
+    justify-content: center;
 }
 
-.Contact h1,h2 {
-    color: white;
+.Contact h1,h2,h3,p {
+    color: rgb(255, 255, 255);
     font-family:'Franklin Gothic Medium', 'Arial bold', Arial, sans-serif;
     transition: 0.5s;
+    margin: 10px;
 }
+
+.ContactMethods, .paymentMethods {
+    background-color: rgb(47, 48, 47);
+    border: 1px, solid, black;
+    border-radius: 10px;
+    display: inline-block;
+
+    height: auto;
+    min-height: 20vh;
+
+    width: auto;
+    min-width: 50%;
+    max-width: 80%;
+}
+
+.ContactMethods ul, .paymentMethods ul {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+}
+
+.ContactMethods ul li, .paymentMethods ul li{
+    display: inline-block;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.contactMethod, .paymentMethod {
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contactMethod > a, .paymentMethod > a {
+    position: absolute;
+    left: 20px;
+    top: 30%;
+    transform: translateY(-50%);
+
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contactMethod > a:hover, .paymentMethod > a:hover {
+    color: rgb(0, 81, 255);
+}
+
+.contactMethod p a, .paymentMethod p a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.contactMethod br, .paymentMethod br {
+    display: none;
+}
+
+/* Mobile Optimization. */
+@media (max-width: 600px) {
+    .ContactMethods {
+        min-height: 25vh;
+        max-height: 80vh;
+        height: auto;
+    }
+
+    .contactMethod {
+        padding: 15px;
+    }
+
+    .contactMethod > a {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+
+        font-size: 32px;
+    }
+    
+    .RobuxIcon {
+        opacity: 0;
+    }
+}
+
